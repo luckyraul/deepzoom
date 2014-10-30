@@ -1,0 +1,155 @@
+<_>
+   <form_key>OHuC9gweYdlqRhtV</form_key>
+   <name>Mygento_Deepzoom</name>
+   <channel>community</channel>
+   <version_ids>
+      <version_ids>2</version_ids>
+      <version_ids>1</version_ids>
+   </version_ids>
+   <summary>Beatuful replacement for Magento core image gallery using Deep Zoom technology</summary>
+   <description>&lt;p&gt;&lt;strong&gt;Deep Zoom&lt;/strong&gt; is an implementation of the open source technology,  provided by Microsoft, for use in for image viewing applications. It  allows users to pan around and zoom in a large, high resolution image or  a large collection of images. It reduces the time required for initial  load by downloading only the region being viewed and/or only at the  resolution it is displayed at. Subsequent regions are downloaded as the  user pans to (or zooms into them); animations are used to hide any  jerkiness in the transition.&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;Extension provide image gallery replacement with new abilities:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt; Easy switch beetween product images. &lt;/li&gt;
+&lt;li&gt;Load highresolution image in small size block&lt;/li&gt;
+&lt;li&gt;Full screen support&lt;/li&gt;
+&lt;/ul&gt;</description>
+   <license>Academic Free License (AFL)</license>
+   <license_uri>http://opensource.org/licenses/afl-3.0.php</license_uri>
+   <version>1.3.0</version>
+   <stability>stable</stability>
+   <notes>First stable version
+
+Deepzoom Image Cache Clear button</notes>
+   <authors>
+      <name>
+         <name>Nikita Tarasov</name>
+      </name>
+      <user>
+         <user>mygento</user>
+      </user>
+      <email>
+         <email>connect@mygento.ru</email>
+      </email>
+   </authors>
+   <depends_php_min>5.0.0</depends_php_min>
+   <depends_php_max>6.0.0</depends_php_max>
+   <depends>
+      <package>
+         <name>
+            <name/>
+         </name>
+         <channel>
+            <channel/>
+         </channel>
+         <min>
+            <min/>
+         </min>
+         <max>
+            <max/>
+         </max>
+         <files>
+            <files>     </files>
+         </files>
+      </package>
+      <extension>
+         <name>
+            <name>Core</name>
+         </name>
+         <min>
+            <min/>
+         </min>
+         <max>
+            <max/>
+         </max>
+      </extension>
+   </depends>
+   <contents>
+      <target>
+         <target>magelocal</target>
+         <target>magecommunity</target>
+         <target>magelib</target>
+         <target>mageetc</target>
+         <target>magelocale</target>
+         <target>magelocale</target>
+         <target>magedesign</target>
+         <target>magedesign</target>
+         <target>magedesign</target>
+         <target>magedesign</target>
+         <target>mageskin</target>
+         <target>mageskin</target>
+         <target>mageskin</target>
+         <target>magemedia</target>
+         <target>mageskin</target>
+      </target>
+      <path>
+         <path/>
+         <path>Mygento/Deepzoom</path>
+         <path>Oz</path>
+         <path>modules/Mygento_Deepzoom.xml</path>
+         <path>en_US/Mygento_Deepzoom.csv</path>
+         <path>ru_RU/Mygento_Deepzoom.csv</path>
+         <path>frontend/default/default/layout/mygento/deepzoom.xml</path>
+         <path>frontend/default/default/template/mygento/deepzoom</path>
+         <path>adminhtml/default/default/layout/mygento/deepzoom.xml</path>
+         <path>adminhtml/default/default/template/mygento/deepzoom</path>
+         <path>frontend/default/default/images/mygento/deepzoom</path>
+         <path>frontend/default/default/js/mygento/seadragon-min.js</path>
+         <path>frontend/default/default/js/mygento/deepzoom-gallery.js</path>
+         <path>catalog/product/deepzoom</path>
+         <path>frontend/default/default/css/mygento/deepzoom.css</path>
+      </path>
+      <type>
+         <type>file</type>
+         <type>dir</type>
+         <type>dir</type>
+         <type>file</type>
+         <type>file</type>
+         <type>file</type>
+         <type>file</type>
+         <type>dir</type>
+         <type>file</type>
+         <type>dir</type>
+         <type>dir</type>
+         <type>file</type>
+         <type>file</type>
+         <type>dir</type>
+         <type>file</type>
+      </type>
+      <include>
+         <include/>
+         <include/>
+         <include/>
+         <include/>
+         <include/>
+         <include/>
+         <include/>
+         <include/>
+         <include/>
+         <include/>
+         <include/>
+         <include/>
+         <include/>
+         <include/>
+         <include/>
+      </include>
+      <ignore>
+         <ignore/>
+         <ignore/>
+         <ignore/>
+         <ignore/>
+         <ignore/>
+         <ignore/>
+         <ignore/>
+         <ignore/>
+         <ignore/>
+         <ignore/>
+         <ignore/>
+         <ignore/>
+         <ignore/>
+         <ignore/>
+         <ignore/>
+      </ignore>
+   </contents>
+</_>
