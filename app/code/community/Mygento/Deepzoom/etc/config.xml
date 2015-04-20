@@ -1,24 +1,24 @@
 <?xml version="1.0"?>
 <!-- 
 /**
- * Sea-Lab Ltd
- *
- * NOTICE OF LICENSE
- *
- * This source file is subject to the Academic Free License (AFL 3.0)
- *
- * DISCLAIMER
- *
- * Do not edit or add to this file if you wish to upgrade to newer
- * versions in the future.
- *
- * @category   Mygento
- * @package    Mygento_Deepzoom
- * @copyright  Copyright (c) 2012 Sea-Lab Ltd (http://www.mygento.net)
- * @contacts   connect@mygento.net
- * @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
- */ 
- -->
+* Sea-Lab Ltd
+*
+* NOTICE OF LICENSE
+*
+* This source file is subject to the Academic Free License (AFL 3.0)
+*
+* DISCLAIMER
+*
+* Do not edit or add to this file if you wish to upgrade to newer
+* versions in the future.
+*
+* @category   Mygento
+* @package    Mygento_Deepzoom
+* @copyright  Copyright (c) 2012 Sea-Lab Ltd (http://www.mygento.net)
+* @contacts   connect@mygento.net
+* @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+*/ 
+-->
 <config>
     <modules>
         <Mygento_Deepzoom>
@@ -26,54 +26,54 @@
         </Mygento_Deepzoom>
     </modules>
 
-	<global>
-		<models>
-			<mygento_deepzoom>
-				<class>Mygento_Deepzoom_Model</class>
-			</mygento_deepzoom>
-			<catalog>
-				<rewrite>
-					<product_attribute_backend_media>Mygento_Deepzoom_Model_Media</product_attribute_backend_media>
-				</rewrite>
-			</catalog>
+    <global>
+        <models>
+            <mygento_deepzoom>
+                <class>Mygento_Deepzoom_Model</class>
+            </mygento_deepzoom>
+            <catalog>
+                <rewrite>
+                    <product_attribute_backend_media>Mygento_Deepzoom_Model_Media</product_attribute_backend_media>
+                </rewrite>
+            </catalog>
         </models>
         <helpers>
             <mygento_deepzoom>
                 <class>Mygento_Deepzoom_Helper</class>
             </mygento_deepzoom>
         </helpers>
-		<blocks>
+        <blocks>
             <mygento_deepzoom>
-				<class>Mygento_Deepzoom_Block</class>
-			</mygento_deepzoom>
+                <class>Mygento_Deepzoom_Block</class>
+            </mygento_deepzoom>
         </blocks>
         <!--
-<resources>
-            <mygento_deepzoom_setup>
-                <setup>
-                    <module>Mygento_Deepzoom</module>
-                    <class>Mygento_Deepzoom_Model_Mysql4_Setup</class>
-                </setup>
-                <connection>
-                    <use>core_setup</use>
-                </connection>
-            </mygento_deepzoom_setup>
-            <mygento_deepzoom_write>
-                <connection>
-                    <use>core_write</use>
-                </connection>
-            </mygento_deepzoom_write>
-            <mygento_deepzoom_read>
-                <connection>
-                    <use>core_read</use>
-                </connection>
-            </mygento_deepzoom_read>
-        </resources>
--->
+        <resources>
+                    <mygento_deepzoom_setup>
+                        <setup>
+                            <module>Mygento_Deepzoom</module>
+                            <class>Mygento_Deepzoom_Model_Mysql4_Setup</class>
+                        </setup>
+                        <connection>
+                            <use>core_setup</use>
+                        </connection>
+                    </mygento_deepzoom_setup>
+                    <mygento_deepzoom_write>
+                        <connection>
+                            <use>core_write</use>
+                        </connection>
+                    </mygento_deepzoom_write>
+                    <mygento_deepzoom_read>
+                        <connection>
+                            <use>core_read</use>
+                        </connection>
+                    </mygento_deepzoom_read>
+                </resources>
+        -->
         
     </global>
 	
-	<admin>
+    <admin>
         <routers>
             <adminhtml>
                 <args>
@@ -85,7 +85,7 @@
         </routers>
     </admin>
     <adminhtml>
-		<acl>
+        <acl>
             <resources>
                 <admin>
                     <children>
@@ -105,22 +105,22 @@
                 </admin>
             </resources>
         </acl>
-		<layout>
+        <layout>
             <updates>
                 <mygento_deepzoom>
                     <file>mygento/deepzoom.xml</file>
                 </mygento_deepzoom>
             </updates>
         </layout>
-		<translate>
-		   <modules>
-			   <Mygento_Deepzoom>
-				   <files>
-					  <default>Mygento_Deepzoom.csv</default>
-				   </files>
-			   </Mygento_Deepzoom>
-		   </modules>
-		</translate>
+        <translate>
+            <modules>
+                <Mygento_Deepzoom>
+                    <files>
+                        <default>Mygento_Deepzoom.csv</default>
+                    </files>
+                </Mygento_Deepzoom>
+            </modules>
+        </translate>
     </adminhtml>
     <frontend>
         <layout>
@@ -150,8 +150,8 @@
                 </observers>
             </controller_action_layout_load_before>
         </events>
-	</frontend>
-	<default>
+    </frontend>
+    <default>
         <mygento_deepzoom>
             <general>
                 <enabled>0</enabled>

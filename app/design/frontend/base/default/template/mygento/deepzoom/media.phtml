@@ -10,32 +10,43 @@
     } else {
         echo '<div id="deepzoom_container"></div>';
     }
+
     ?>
     <script type="text/javascript">
-        Seadragon.Config.imagePath="<?php echo $this->getSkinUrl('images/mygento/deepzoom/') ?>";
-        var viewer=null;
-	
+        Seadragon.Config.imagePath = "<?php echo $this->getSkinUrl('images/mygento/deepzoom/') ?>";
+        var viewer = null;
+
         function init()
-        {viewer = new Seadragon.Viewer("deepzoom_container");viewer.openDzi("<?php echo $this->helper('mygento_deepzoom')->loadImage($_product->getImage()); ?>");}
-	
-        function switchTo(event,dzi)
-        {if(dzi){viewer.openDzi(dzi);}else{viewer.close();}Seadragon.Utils.cancelEvent(event);}
-	
-        Seadragon.Utils.addEvent(window,"load",init);
+        {
+            viewer = new Seadragon.Viewer("deepzoom_container");
+            viewer.openDzi("<?php echo $this->helper('mygento_deepzoom')->loadImage($_product->getImage()); ?>");
+        }
+
+        function switchTo(event, dzi)
+        {
+            if (dzi) {
+                viewer.openDzi(dzi);
+            } else {
+                viewer.close();
+            }
+            Seadragon.Utils.cancelEvent(event);
+        }
+
+        Seadragon.Utils.addEvent(window, "load", init);
     </script>
-<?php if (count($this->getGalleryImages()) > 0) { ?>
+    <?php if (count($this->getGalleryImages()) > 0) { ?>
         <div class="more-views">
             <h2><?php echo $this->__('More Views') ?></h2>
             <ul>
-    <?php foreach ($this->getGalleryImages() as $_image) { ?>
+                <?php foreach ($this->getGalleryImages() as $_image) { ?>
                     <li>
-                       <a href="#" onclick="
-                        switchTo(event,'<?php echo $this->helper('mygento_deepzoom')->loadImage($_image->getFile()); ?>');" title="<?php echo $this->htmlEscape($_image->getLabel()) ?>">
+                        <a href="#" onclick="
+                                        switchTo(event, '<?php echo $this->helper('mygento_deepzoom')->loadImage($_image->getFile()); ?>');" title="<?php echo $this->htmlEscape($_image->getLabel()) ?>">
                             <img src="<?php echo $this->helper('catalog/image')->init($this->getProduct(), 'thumbnail', $_image->getFile())->resize(56); ?>" width="56" height="56" alt="<?php echo $this->htmlEscape($_image->getLabel()) ?>" />
                         </a>
                     </li>
-    <?php } ?>
+                <?php } ?>
             </ul>
         </div>
-<?php } ?>
+    <?php } ?>
 </div>

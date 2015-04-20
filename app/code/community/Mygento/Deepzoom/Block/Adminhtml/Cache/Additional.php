@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Sea-Lab Ltd
  *
@@ -17,15 +18,14 @@
  * @contacts   connect@mygento.net
  * @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
  */
-
 class Mygento_Deepzoom_Block_Adminhtml_Cache_Additional extends Mage_Adminhtml_Block_Template
 {
 
-	public function canShowButton()
+    public function canShowButton()
     {
         return Mage::helper('mygento_deepzoom')->isEnabled();
     }
-    
+
     public function getCleanCacheUrl()
     {
         return $this->getUrl('*/deepzoomCache/clean');

@@ -2,15 +2,15 @@ var viewer = null;
 i = 0;
 function timedCount()
 {
-    switchTo(init,'next');
-    t=setTimeout("timedCount()",6000);
+    switchTo(init, 'next');
+    t = setTimeout("timedCount()", 6000);
 }
 
 function doTimer()
 {
     if (timer_is_on)
     {
-        timer_is_on=1;
+        timer_is_on = 1;
         timedCount();
     }
 }
@@ -18,17 +18,17 @@ function doTimer()
 function stopCount()
 {
     clearTimeout(t);
-    timer_is_on=0;
+    timer_is_on = 0;
 }
 function switchTo(event, dzi) {
     if (dzi == 'next') {
         i++;
-        if (i == max )
+        if (i == max)
         {
             i = 0
         }
         viewer.openDzi(gallery[i]);
-    }               
+    }
     if (dzi == 'prev')
     {
         i--;
@@ -41,7 +41,7 @@ function switchTo(event, dzi) {
     else {
         viewer.close();
     }
-    Seadragon.Utils.cancelEvent(event);  
+    Seadragon.Utils.cancelEvent(event);
 }
 function init() {
     viewer = new Seadragon.Viewer("gallery_container");

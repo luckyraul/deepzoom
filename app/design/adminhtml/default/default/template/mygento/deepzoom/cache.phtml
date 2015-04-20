@@ -17,14 +17,15 @@
  * @contacts   connect@mygento.net
  * @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
  */
+if ($this->canShowButton()):
 
-if ($this->canShowButton()): ?>
-	<table class="form-list">
-	    <tr>
-	        <td class="scope-label">
-	            <button type="button" class="scalable" onclick="setLocation('<?php echo $this->getCleanCacheUrl();?>')"><span><?php echo Mage::helper('mygento_deepzoom')->__('Flush Deepzoom generated images') ?></span></button>
-	        </td>
-	        <td class="scope-label"><?php echo Mage::helper('mygento_deepzoom')->__('Pregenerated product Deepzoom images files.') ?></td>
-	    </tr>
-	</table>
-<?php endif;?>
+    ?>
+    <table class="form-list">
+        <tr>
+            <td class="scope-label">
+                <button type="button" class="scalable" onclick="setLocation('<?php echo $this->getCleanCacheUrl(); ?>')"><span><?php echo Mage::helper('mygento_deepzoom')->__('Flush Deepzoom generated images') ?></span></button>
+            </td>
+            <td class="scope-label"><?php echo Mage::helper('mygento_deepzoom')->__('Pregenerated product Deepzoom images files.') ?></td>
+        </tr>
+    </table>
+<?php endif; ?>
