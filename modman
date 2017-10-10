@@ -1,0 +1,12 @@
+app/code/community/Mygento/Deepzoom app/code/community/Mygento/Deepzoom
+app/design/adminhtml/default/default/layout/mygento/deepzoom.xml app/design/adminhtml/default/default/layout/mygento/deepzoom.xml
+app/design/adminhtml/default/default/template/mygento/deepzoom app/design/adminhtml/default/default/template/mygento/deepzoom
+app/design/frontend/base/default/layout/mygento/deepzoom.xml app/design/frontend/base/default/layout/mygento/deepzoom.xml
+app/design/frontend/base/default/template/mygento/deepzoom app/design/frontend/base/default/template/mygento/deepzoom
+app/etc/modules/Mygento_Deepzoom.xml app/etc/modules/Mygento_Deepzoom.xml
+app/locale/ru_RU/Mygento_Deepzoom.csv app/locale/ru_RU/Mygento_Deepzoom.csv
+lib/Oz/Deepzoom lib/Oz/Deepzoom
+skin/frontend/base/default/css/mygento/deepzoom.css skin/frontend/base/default/css/mygento/deepzoom.css
+skin/frontend/base/default/images/mygento/deepzoom skin/frontend/base/default/images/mygento/deepzoom
+skin/frontend/base/default/js/mygento/deepzoom-gallery.js skin/frontend/base/default/js/mygento/deepzoom-gallery.js
+skin/frontend/base/default/js/mygento/seadragon-min.js skin/frontend/base/default/js/mygento/seadragon-min.js
