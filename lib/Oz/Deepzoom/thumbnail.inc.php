@@ -164,7 +164,7 @@ class Thumbnail {
 
         if($this->error == true) {
             $this->showErrorImage();
-            break;
+            return;
         }
     }
 
